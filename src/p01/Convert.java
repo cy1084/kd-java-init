@@ -5,7 +5,7 @@ public class Convert {
 	public static void main(String[] args) {
 		int i=1;
 		String s="1";
-		String s1=i+"";
+		String s1=i+""; //문자열
 		System.out.println(s.equals(s1));
 		
 		int i1=Integer.parseInt(s);//String->int

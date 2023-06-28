@@ -14,6 +14,7 @@ public class ArrayTest {
 		
 		lotto[0]=1;
 		
+		
 		lotto = new int[6];
 		
 

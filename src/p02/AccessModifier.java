@@ -1,7 +1,7 @@
 package p02;
 
 //접근 제어자
-public class AccessModifier { //클래스에는 선언,초기화만 가능하며 실행은 안됨
+public class AccessModifier { //클래스에서는 선언,초기화만 가능하며 실행은 안됨
 	int b=10;
 	
 	public static void main(String[] args) {//메인에서 실행 가능
