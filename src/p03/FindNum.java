@@ -32,6 +32,7 @@ public class FindNum {
 			// }
 			correct = rNum == inputNum;
 			count++;
+			
 		}
 		System.out.println(count + "번만에 맞췄다");
 

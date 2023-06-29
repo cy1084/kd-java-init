@@ -1,5 +1,5 @@
 package p03;
-
+//쪽지시험 여기서 최소 3문제 
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class Lotto5 {
 		Random r = new Random();
 		int[] lotto = new int[6];
 		int[] lotto2 = new int[6];
-
+		
 		for (int i = 0; i < lotto.length; i++) {
 			lotto[i] = r.nextInt(45) + 1;
 		}
@@ -24,13 +24,27 @@ public class Lotto5 {
 
 		for (int i = 0; i < lotto.length; i++) {
 			lotto2[i] = Integer.parseInt(strs[i]);
+			//
+			
 		}
 
 		int count = 0;
 		for (int i = 0; i < lotto.length; i++) {
 			for (int j = 0; j < lotto2.length; j++) {
 				if (lotto[j] == lotto2[j])
+					//if(str[i].equals(lottoString)){}
+					//if(lotto[i]==strNum){}
 					count++;
+				//==은 주소값 비교
+				//equals는 문자 비교
+				
+				
+				//다 같은 방법
+				//String lottoString=Integer.toString(lotto[i]);
+				//lottoString=lotto[i]+"";
+				//lottoString=String.valueOf(lotto[i]);
+				
+				
 			}
 		}
 		for (int i = 0; i < lotto.length; i++) {
