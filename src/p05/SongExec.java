@@ -51,8 +51,8 @@ public class SongExec {
 		
 		/*
 		 * 데이터 타입 Song
-		= 	Song fSong=song[0]; //일등, 0번째 인덱스의 3개 변수 정보 들어감
-			Song lSong=song[0];	//꼴등
+		= 	Song fSong=songs[0]; //일등, 0번째 인덱스의 3개 변수 정보 들어감
+			Song lSong=songs[0];	//꼴등
 			
 			for (int i = 1; i < songs.length; i++) { 
 			if (lSong.rank < songs[i].rank) {
