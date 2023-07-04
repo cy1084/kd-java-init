@@ -27,6 +27,8 @@ public class SchoolExec {
 		
 		for(int i=0;i<schools.length;i++) {
 			System.out.print(schools[i].name);
+			
+			//if문 데이터 타입 -> boolean
 			if(schools[i] instanceof MiddleSchool) { //인스턴스 화-> 이거라고 불러도 되니? middleschool이라고 불러도 되니?
 				MiddleSchool ms=(MiddleSchool)schools[i]; //middleschool로 캐스팅
 				ms.studentType="중학교";
