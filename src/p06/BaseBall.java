@@ -29,29 +29,36 @@ public class BaseBall {
 		int ball = 0;
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("니가 생각하는 숫자를 ,를 기준으로 3개만 말해봐: ");
-		String numStr = sc.nextLine();
-		String[] numStrs = numStr.split(",");
+		
+//while문 다시
+		
+			System.out.println("니가 생각하는 숫자를 ,를 기준으로 3개만 말해봐: ");
+		while (strike != 3) {
+			String numStr = sc.nextLine();
+			String[] numStrs = numStr.split(",");
 
-		int[] compNums = new int[numStrs.length];
-		for (int i = 0; i < numStrs.length; i++) {
-			compNums[i] = Integer.parseInt(numStrs[i]); // int 배열로
-		}
-
-		for (int i = 0; i < 3; i++) {
-			for (int j = 0; j < i; j++) {
-				if ((nums[i] == compNums[j]) && (i == j)) {
-					strike++;
-				} else if ((nums[i] == compNums[j]) && (i != j)) {
-					ball++;
-				}
-
+			int[] compNums = new int[numStrs.length];
+			for (int i = 0; i < numStrs.length; i++) {
+				compNums[i] = Integer.parseInt(numStrs[i]); // int 배열로
 			}
-		}
 
-		System.out.println(strike + " strike, " + ball + " ball.");
-		if (strike == 3) {
-			System.out.println("정답입니다.");
+			for (int i = 0; i < nums.length; i++) {
+				for (int j = 0; j < compNums.length; j++) { // 3개를 입력하지 않은 사람들은 걸러내야 하기 때문에 compNums의 길이만큼 돌림
+					if ((nums[i] == compNums[j]) && (i == j)) {
+						strike++;
+					} else if ((nums[i] == compNums[j]) && (i != j)) {
+						ball++;
+					}
+					break;
+				}
+			}
+
+			System.out.println(strike + " strike, " + ball + " ball.");
+			if (strike == 3) {
+				System.out.println("정답입니다.");
+				break;
+			}
+			
 		}
 
 	}
