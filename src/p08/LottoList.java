@@ -11,7 +11,7 @@ public class LottoList {
 		Random r = new Random();
 
 		for (int i = 0; i < 6; i++) {
-			int rNum = r.nextInt(6) + 1;
+			int rNum = r.nextInt(6) + 1; //1~6
 			if (lotto.indexOf(rNum) == -1) { // 중복 제거
 				lotto.add(rNum);
 			} else {
