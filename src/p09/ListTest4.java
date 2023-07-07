@@ -24,7 +24,7 @@ public class ListTest4 {
 		}
 		
 		/*
-		 * numStr을 ,를 기준으로 배열을 만든 후 numList에 맞는 게 몇 개 있는지 출력 -> 중복되는 숫자를 찾는 것과 같음
+		 * numStr을 ,를 기준으로 배열을 만든 후 numList에 맞는 게 몇 개 있는지 출력 -> 중복되는 숫자를 찾는 것과 같음  
 		 */
 		
 		System.out.print("숫자 3개를 ,를 기준으로 입력: ");

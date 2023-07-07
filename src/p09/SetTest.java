@@ -11,7 +11,7 @@ public class SetTest {
 		set.add(1);
 		set.add(1);
 		set.add(1); //set은 중복 안됨 -> 안 들어감
-					//set으로 중복 제거 기능도 가능
+					//따라서 set으로 중복 제거 기능도 가능
 		set.add(2); 
 		System.out.println(set.size()); //2
 

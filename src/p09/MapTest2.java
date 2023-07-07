@@ -41,6 +41,7 @@ public class MapTest2 {
 		//이중 for문
 		for (int i = 0; i < mapList.size(); i++) {
 			Map<String, String> map = mapList.get(i);
+	  //for(Map<String, String> map : mapList){		//향상된 for문
 			Iterator<String> it = map.keySet().iterator();
 
 			while (it.hasNext()) {
